@@ -35,6 +35,10 @@ const Work = () => {
                 <div className={`grid sm:grid-cols-2 md:grid-cols-3 gap-4`}>
                     <WorkItem image={KGAMING} desc={`K-GAMING | Symfony 6 Application`} demo={`https://k-gaming.k-grischko.fr/`} code={`https://github.com/DenZaiyy/K-Gaming`}/>
                     <WorkItem image={Session} desc={`SESSION | Symfony 6 Application`} demo={`https://session.k-grischko.fr/`} code={`https://github.com/DenZaiyy/sfSessionTW`}/>
+                    <WorkItem image={KGAMING} desc={`K-GAMING | Symfony 6 Application`} demo={`https://k-gaming.k-grischko.fr/`} code={`https://github.com/DenZaiyy/K-Gaming`}/>
+                    <WorkItem image={Session} desc={`SESSION | Symfony 6 Application`} demo={`https://session.k-grischko.fr/`} code={`https://github.com/DenZaiyy/sfSessionTW`}/>
+                    <WorkItem image={KGAMING} desc={`K-GAMING | Symfony 6 Application`} demo={`https://k-gaming.k-grischko.fr/`} code={`https://github.com/DenZaiyy/K-Gaming`}/>
+                    <WorkItem image={Session} desc={`SESSION | Symfony 6 Application`} demo={`https://session.k-grischko.fr/`} code={`https://github.com/DenZaiyy/sfSessionTW`}/>
                 </div>
             </div>
         </div>
