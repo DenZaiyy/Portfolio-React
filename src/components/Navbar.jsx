@@ -3,6 +3,7 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from "react-icons/hi";
 import {BsFillPersonLinesFill} from "react-icons/bs";
 import logo from '../assets/logo.png'
+import {Link} from 'react-scroll';
 
 const Social = (props) => {
     return (
@@ -23,11 +24,21 @@ function Navbar() {
 
             {/* Menu */}
             <ul className="hidden md:flex">
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li>
+                    <Link to="home" smooth={true} duration={500}>Home</Link>
+                </li>
+                <li>
+                    <Link to="about" smooth={true} duration={500}>About</Link>
+                </li>
+                <li>
+                    <Link to="skills" smooth={true} duration={500}>Skills</Link>
+                </li>
+                <li>
+                    <Link to="work" smooth={true} duration={500}>Works</Link>
+                </li>
+                <li>
+                    <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                </li>
             </ul>
 
             {/* Hamburger */}
@@ -35,12 +46,22 @@ function Navbar() {
                 {!nav ? <FaBars size={30} /> : <FaTimes size={30} />}
             </div>
             {/* Mobile Menu */}
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-                <li className="py-6 text-4xl">Home</li>
-                <li className="py-6 text-4xl">About</li>
-                <li className="py-6 text-4xl">Skills</li>
-                <li className="py-6 text-4xl">Work</li>
-                <li className="py-6 text-4xl">Contact</li>
+            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center z-99'}>
+                <li className="py-6 text-4xl">
+                    <Link to="home" onClick={handleClick} smooth={true} offset={-80} duration={500}>Home</Link>
+                </li>
+                <li className="py-6 text-4xl">
+                    <Link to="about" onClick={handleClick} smooth={true} offset={-80} duration={500}>About</Link>
+                </li>
+                <li className="py-6 text-4xl">
+                    <Link to="skills" onClick={handleClick} smooth={true} offset={-80} duration={500}>Skills</Link>
+                </li>
+                <li className="py-6 text-4xl">
+                    <Link to="work" onClick={handleClick} smooth={true} offset={-80} duration={500}>Works</Link>
+                </li>
+                <li className="py-6 text-4xl">
+                    <Link to="contact" onClick={handleClick} smooth={true} offset={-80} duration={500}>Contact</Link>
+                </li>
             </ul>
 
             {/* Social icons */}

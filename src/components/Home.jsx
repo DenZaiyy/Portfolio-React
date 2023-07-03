@@ -1,13 +1,12 @@
 import React, {useEffect} from 'react';
 import {HiArrowNarrowRight} from "react-icons/hi";
-import AOS from 'aos';
+import AOS from "aos";
 import 'aos/dist/aos.css';
 
 const Home = () => {
     useEffect(() => {
-        AOS.init();
+        AOS.init({disable: 'mobile'});
     }, [])
-
     return (
         <div name='home' className='w-full h-screen bg-[#0a192f]'>
 
