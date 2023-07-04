@@ -25,7 +25,7 @@ const Skills = () => {
         AOS.init({disable: 'mobile'});
     }, [])
     return (
-        <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
+        <section name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
             {/* Container */}
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full" >
                 <div>
@@ -34,17 +34,17 @@ const Skills = () => {
                 </div>
                 
                 <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center py-8">
-                    <Skill name="HTML" src={HTML} aos="fade-right" duration="1000" delay="100"/>
-                    <Skill name="CSS" src={CSS} aos="fade-right" duration="1000" delay="100"/>
+                    <Skill name="HTML 5" src={HTML} aos="fade-right" duration="1000" delay="100"/>
+                    <Skill name="CSS 3" src={CSS} aos="fade-right" duration="1000" delay="100"/>
                     <Skill name="JS" src={JS} aos="fade-left" duration="1000" delay="100"/>
                     <Skill name="SASS" src={SASS} aos="fade-left" duration="1000" delay="100"/>
-                    <Skill name="PHP" src={PHP} aos="fade-right" duration="1000" delay="100"/>
-                    <Skill name="SYMFONY" src={SYMFONY} aos="fade-right" duration="1000" delay="100"/>
+                    <Skill name="PHP 8.2" src={PHP} aos="fade-right" duration="1000" delay="100"/>
+                    <Skill name="SYMFONY 6.2" src={SYMFONY} aos="fade-right" duration="1000" delay="100"/>
                     <Skill name="REACT" src={REACT} aos="fade-left" duration="1000" delay="100"/>
                     <Skill name="TAILWIND" src={TAILWIND} aos="fade-left" duration="1000" delay="100"/>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

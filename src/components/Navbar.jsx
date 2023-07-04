@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from "react-icons/hi";
-import {BsFillPersonLinesFill} from "react-icons/bs";
 import logo from '../assets/logo.png'
 import {Link} from 'react-scroll';
 
@@ -70,7 +69,6 @@ function Navbar() {
                     <Social name="LinkedIn" link="https://www.linkedin.com/in/kevin-grischko/" icon={FaLinkedin} bgColor="bg-blue-600" />
                     <Social name="Github" link="https://github.com/DenZaiyy" icon={FaGithub} bgColor="bg-[#333333]" />
                     <Social name="Email" link="mailto:grischko.kevin@gmail.com" icon={HiOutlineMail} bgColor="bg-[#6fc2b0]" />
-                    <Social name="Resume" link="" icon={BsFillPersonLinesFill} bgColor="bg-[#565f69]" />
                 </ul>
             </div>
         </div>
