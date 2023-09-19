@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('./style/base.css');
+@import url('./style/components.css');
+@import url('./style/utilities.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-    body {
-        @apply font-[Raleway];
-    }
-    li {
-        @apply px-4;
-        @apply cursor-pointer;
-    }
-}
 
 .content-div {
     background-repeat: no-repeat;
