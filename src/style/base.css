@@ -1,0 +1,10 @@
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4 cursor-pointer;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */
