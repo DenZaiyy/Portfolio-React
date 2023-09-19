@@ -8,7 +8,7 @@ const Home = () => {
         AOS.init({disable: 'mobile'});
     }, [])
     return (
-        <section name='home' className='w-full h-screen bg-[#0a192f]'>
+        <section name='home' className='section'>
 
             {/* Container */}
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
@@ -20,7 +20,7 @@ const Home = () => {
                     will enable me to become an "Application Developer & Designer"</p>
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                     <button
-                        className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#f44b3a] hover:border-[#f44b3a]">View
+                        className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#f44b3a] hover:border-[#f44b3a] duration-300">View
                         work
                         <span className="group-hover:rotate-90 duration-300">
                             <HiArrowNarrowRight className="ml-3"/>

@@ -39,7 +39,7 @@ const Contact = () => {
 	const [message, setMessage] = useState('')
 
 	const [btnName, setBtnName] = useState('Send')
-	const [btnColor, setBtnColor] = useState('')
+	const [btnColor, setBtnColor] = useState('blue')
 	const [displayAlert, setDisplayAlert] = useState('hidden')
 	const [alertType, setAlertType] = useState(alertTypes.default)
 
@@ -60,7 +60,7 @@ const Contact = () => {
 					emailjs.init(publicKey);
 
 					setBtnName('Sending...')
-					setBtnColor('bg-yellow-500')
+					setBtnColor('yellow')
 
 					e.preventDefault()
 
@@ -91,7 +91,7 @@ const Contact = () => {
 			alertTypes.success.content = content
 			setDisplayAlert('block')
 			setBtnName('Email send')
-			setBtnColor('bg-green-700')
+			setBtnColor('green')
 		}
 
 		if (type === "error" && mail && content) {
@@ -99,7 +99,7 @@ const Contact = () => {
 			alertTypes.error.content = content
 			setDisplayAlert('block')
 			setBtnName('Email not send')
-			setBtnColor('bg-red-700')
+			setBtnColor('red')
 		}
 
 		if (type === "error" && !mail && content) {
@@ -111,7 +111,7 @@ const Contact = () => {
 		setTimeout(() => {
 			if(mail) {
 				setBtnName('Send')
-				setBtnColor('')
+				setBtnColor('blue')
 			}
 			setDisplayAlert('hidden')
 		}, 3000)
@@ -131,7 +131,7 @@ const Contact = () => {
 	}
 
 	return (
-		<section name='contact' className={`w-full h-screen bg-[#0a192f] flex justify-center items-center p-4`}>
+		<section name='contact' className={`section flex-center p-4`}>
 			<form ref={form} onSubmit={handleSubmit} method={'POST'} className={`flex flex-col max-w-[600px] w-full`}>
 				<div className={`pb-8`}>
 					<p className={`text-4xl font-bold inline border-b-4 border-[#f44b3a] text-gray-300`} data-aos="fade-right" data-aos-easing="ease-in-sine">Contact</p>
@@ -148,8 +148,7 @@ const Contact = () => {
 				<div className="flex justify-center">
 					<ReCAPTCHA sitekey={captchaSiteKey} ref={captchaRef} theme={'dark'} />
 				</div>
-				<button type="submit" className={`${btnColor} text-white border-2 hover:bg-[#f44b3a] hover:border-[#f44b3a] px-4 py-3 my-8 mx-auto flex items-center`}>{btnName}
-				</button>
+				<button type="submit" className={`btn btn-center btn-${btnColor}`}>{btnName}</button>
 			</form>
 		</section>
 	);

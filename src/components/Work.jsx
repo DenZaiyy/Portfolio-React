@@ -22,10 +22,10 @@ const WorkItem = (props) => {
                 <span className={`text-2xl font-bold text-white tracking-wider`}>{props.desc}</span>
                 <div className={`pt-8 text-center`}>
                     <a href={props.demo} rel="noreferrer" target="_blank">
-                        <button className={`rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:text-white hover:bg-[#f44b3a] duration-300`}>Demo</button>
+                        <button className={`btn-works`}>Demo</button>
                     </a>
                     <a href={props.code} rel="noreferrer" target="_blank">
-                        <button className={`rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:text-white hover:bg-[#f44b3a] duration-300`}>Code</button>
+                        <button className={`btn-works`}>Code</button>
                     </a>
                 </div>
             </div>
