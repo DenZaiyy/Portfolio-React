@@ -132,7 +132,7 @@ const Contact = () => {
 
 	return (
 		<section name='contact' className={`section flex-center p-4`}>
-			<form ref={form} onSubmit={handleSubmit} method={'POST'} className={`flex flex-col max-w-[600px] w-full`}>
+			<form ref={form} onSubmit={handleSubmit} method={'POST'} className={`form mw-600`}>
 				<div className={`pb-8`}>
 					<p className={`text-4xl font-bold inline border-b-4 border-[#f44b3a] text-gray-300`} data-aos="fade-right" data-aos-easing="ease-in-sine">Contact</p>
 					<p className={`text-gray-300 py-4`} data-aos="fade-up" data-aos-duration="1500">// Submit the form below or shoot me an <a href="mailto:grischko.kevin@gmail.com">email</a></p>
