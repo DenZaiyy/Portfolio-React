@@ -3,6 +3,11 @@
 @import url('./style/components.css');
 @import url('./style/utilities.css');
 
+:root {
+    --blue: #0a192f;
+    --orange: #f44b3a;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

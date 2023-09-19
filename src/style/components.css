@@ -1,15 +1,21 @@
 @layer components {
   .section {
-    @apply w-full h-screen text-gray-300 bg-[#0a192f];
+    @apply w-full h-screen text-gray-300 bg-[--blue];
   }
   .flex-center {
     @apply flex justify-center items-center;
   }
+  .form {
+    @apply flex flex-col w-full text-black;
+  }
+  .mw-600 {
+    @apply max-w-[600px];
+  }
   .btn-works {
-    @apply rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:text-white hover:bg-[#f44b3a] duration-300;
+    @apply rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:text-white hover:bg-[--orange] duration-300;
   }
   .btn {
-    @apply text-white border-2 hover:bg-[#f44b3a] hover:border-[#f44b3a] px-4 py-3 my-8 flex items-center duration-300;
+    @apply text-white border-2 hover:bg-[--orange] hover:border-[--orange] px-4 py-3 my-8 flex items-center duration-300;
   }
   .btn .btn-yellow {
     @apply bg-yellow-500;
@@ -18,7 +24,7 @@
     @apply bg-red-500;
   }
   .btn .btn-blue {
-    @apply bg-[#0a192f];
+    @apply bg-[--blue];
   }
   .btn .btn-green {
     @apply bg-green-500;
